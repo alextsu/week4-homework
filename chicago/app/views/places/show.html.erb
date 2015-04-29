@@ -25,7 +25,7 @@
 <h2><%= @place.title %></h2>
 
 <p>
-  <span class="price">Admission Price: <%= number_to_currency @place.price/100 %></span>
+  <span class="price">Admission Price: <%= number_to_currency @place.price/100.00 %></span>
   <%= link_to "Edit", "/places/#{@place.id}/edit" %>
 </p>
 

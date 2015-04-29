@@ -12,7 +12,7 @@
   <% @places.each do |place| %>
     <li>
       <%= link_to place.title, "/places/#{place.id}" %>
-      (<%= number_to_currency(place.price / 100) %>)
+      (<%= number_to_currency(place.price / 100.00) %>)
       <%= link_to "(delete)", "/places/#{place.id}", :method => 'delete' %>
     </li>
   <% end %>
